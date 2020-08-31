@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA4zYZvBIoM8gZybxXAM7IKBQ-CTv1HqSw",
+    authDomain: "fir-database-de34a.firebaseapp.com",
+    databaseURL: "https://fir-database-de34a.firebaseio.com",
+    projectId: "fir-database-de34a",
+    storageBucket: "fir-database-de34a.appspot.com",
+    messagingSenderId: "1038067256896",
+    appId: "1:1038067256896:web:a3a58decda3ea0d43259a5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<body>
+
+    <div class="container">
+        <div class="main-content">
+
+
+            <h1>Quzi application</h1>
+
+            <input type="text" placeholder="please enter your name" id="name"></input><br><br>
+        <fieldset>
+
+            <p class="question"><b>what is 6+5</b></p>
+            <input type="radio" name="maths" id="right_1">11</input><br>
+            <input type="radio" name="maths" id="wrong_1">13</input><br>
+            <input type="radio" name="maths" id="wrong_1">15</input><br>
+
+    </fieldset>          
+
+    <br><br>
+    <fieldset>
+
+        <p class="question"><b>what is the name of americas president</b></p>
+        <input type="radio" name="president" id="right_2">Donald Trump</input><br>
+        <input type="radio" name="president" id="wrong_2">arif</input><br>
+        <input type="radio" name="president" id="wrong_2">queen aliza</input><br>
+
+</fieldset>                                  
+<br><br>
+<fieldset>
+
+    <p class="question"><b>what is 2+3</b></p>
+    <input type="radio" name="math" id="right_3">5</input><br>
+    <input type="radio" name="math" id="wrong_3">15</input><br>
+    <input type="radio" name="math" id="wrong_3">52</input><br>
+
+</fieldset>  
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <button href="result.html" id="check" onclick="check()">check</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
